@@ -8,6 +8,8 @@ verify_ssl = true
 [packages]
 bs4 = "*"
 requests = "*"
+flask = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.7"
