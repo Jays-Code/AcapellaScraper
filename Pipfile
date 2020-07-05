@@ -10,6 +10,7 @@ bs4 = "*"
 requests = "*"
 flask = "*"
 pylint = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.7"
