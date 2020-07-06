@@ -24,12 +24,19 @@ videolist=[]
 for v in vids:
     tmp = 'https://www.youtube.com' + v['href']
     videolist.append(tmp)
+
+
     
 
 @app.route('/')
 def listResults():
-    return(page)
+   
+    print(vids)
+    
 
 '''
 should return soup but that gives error: return(soup)
+'''
+'''
+example url for reference: https://www.youtube.com/watch?v=eB0nUzAI7M8
 '''
