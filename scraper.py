@@ -7,11 +7,11 @@ app = Flask(__name__)
 
 base = "https://www.youtube.com/results?search_query="
 
-qstring = "isolated+vocals+acapella"
+qstring = "isolated+vocals"
 
 r = requests.get(base+qstring)
 
-page = r.text
+page = r.content
 soup = bs(page, 'html.parser')
 
 
@@ -30,8 +30,10 @@ for v in vids:
 
 @app.route('/')
 def listResults():
-   
     print(vids)
+    return(page)
+
+
     
 
 '''
