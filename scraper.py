@@ -37,7 +37,7 @@ soup = bs(pageContent, 'lxml')
 
 
 
-vids = soup.findAll('a',attrs={'class':'yt-uix-tile-link'})
+vids = soup.findAll('a',attrs={'id':'video-title'})
 videolist=[]
 for v in vids:
     tmp = 'https://www.youtube.com' + v['href']
@@ -49,7 +49,9 @@ for v in vids:
 @app.route('/')
 def listResults():
     print(vids)
+    
     return(pageContent)
+    
 
 
     
