@@ -1,18 +1,26 @@
 from bs4 import BeautifulSoup as bs
 import requests
 from flask import Flask
+import lxml
+
 
 app = Flask(__name__)
 
 
 base = "https://www.youtube.com/results?search_query="
 
-qstring = "isolated+vocals"
+qstring = "isolated+vocals+acapella"
+
+
+'''
+base = "https://www.t"
+qstring = "witter.com"
+'''
 
 r = requests.get(base+qstring)
 
-page = r.content
-soup = bs(page, 'html.parser')
+page = r.text
+soup = bs(page, 'lxml')
 
 
 

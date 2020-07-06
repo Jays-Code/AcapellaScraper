@@ -11,6 +11,7 @@ requests = "*"
 flask = "*"
 pylint = "*"
 python-dotenv = "*"
+lxml = "*"
 
 [requires]
 python_version = "3.7"
