@@ -12,6 +12,7 @@ flask = "*"
 pylint = "*"
 python-dotenv = "*"
 lxml = "*"
+selenium = "*"
 
 [requires]
 python_version = "3.7"
