@@ -22,10 +22,7 @@ base = "https://www.youtube.com/results?search_query="
 qstring = "isolated+vocals+acapella"
 
 
-'''
-base = "https://www.t"
-qstring = "witter.com"
-'''
+
 
 r = requests.get(base+qstring)
 
@@ -53,32 +50,14 @@ def listResults():
     return str(videolist)
     
 
-'''
+''' FOR PRINTING LIST TO DOWNLOAD MANUALLY
 now that your results are being printed using the 'vids' variable, include some lines of code 
 that will make a list of the hrefs and vid titles and save it under queryResults variable
 (issue still persists with page/hits not fully loading; why?)
 '''
 
-'''
-should return soup but that gives error: return(soup)
-'''
 
-'''
-example url for reference: https://www.youtube.com/watch?v=eB0nUzAI7M8
-'''
-
-
-'''
-
-import requests
-from bs4 import BeautifulSoup
-from selenium import webdriver
-import os
-driver = webdriver.Firefox(executable_path="/home/rishabh/Documents/pythonProjects/webScarapping/geckodriver")
-driver.get('https://www.youtube.com/feed/trending')
-content = driver.page_source
-driver.close()
-
-soup = BeautifulSoup(content, 'html.parser')
-#Do whatever you want with it
+''' FOR DOWNLOADING AUTOMATICALLY
+options for mp3 encoding: 
+https://stackoverflow.com/questions/47420304/download-video-in-mp3-format-using-pytube
 '''
