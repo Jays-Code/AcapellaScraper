@@ -48,21 +48,24 @@ for v in vids:
 
 @app.route('/')
 def listResults():
-    print(vids)
+    print(videolist)
     
-    return(pageContent)
+    return str(videolist)
     
 
-
-    
+'''
+now that your results are being printed using the 'vids' variable, include some lines of code 
+that will make a list of the hrefs and vid titles and save it under queryResults variable
+(issue still persists with page/hits not fully loading; why?)
+'''
 
 '''
 should return soup but that gives error: return(soup)
 '''
+
 '''
 example url for reference: https://www.youtube.com/watch?v=eB0nUzAI7M8
 '''
-
 
 
 '''
